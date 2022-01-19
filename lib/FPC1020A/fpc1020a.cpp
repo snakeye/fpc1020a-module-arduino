@@ -35,7 +35,7 @@ unsigned char FPC1020::WaitFpData(void)
     while (mySerial->available() <= 0)
         ;
 
-    for (i = 200; i > 0; i--) //wait response info
+    for (i = 192; i > 0; i--) //wait response info
     {
         delay(20);
         rBuf[rBuf_p++] = mySerial->read();
